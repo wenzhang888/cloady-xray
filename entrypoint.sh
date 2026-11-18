@@ -22,9 +22,10 @@ cat > /etc/xray/config.json <<EOF
         "decryption": "none"
       },
       "streamSettings": {
-        "network": "ws",
-        "wsSettings": {
-          "path": "$WS_PATH"
+        "network": "xhttp",
+        "xhttpSettings": {
+          "path": "$WS_PATH",
+          "mode": "auto"
         }
       }
     }
